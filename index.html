@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP32 Monitor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="data-table">
+    <p id="cpu_usage" class="value" data-title="CPU Usage" data-summary="現在のCPU使用率を表示します">-</p>
+    <p id="free_heap" class="value" data-title="Free Heap" data-summary="利用可能なヒープメモリの容量を表示します">-</p>
+    <p id="uptime" class="value" data-title="Uptime" data-summary="デバイスの稼働時間を表示します">-</p>
+    <p id="esp_model" class="value" data-title="ESP Model" data-summary="使用中のESPモデルを表示します">-</p>
+    <p id="flash_chip_size" class="value" data-title="Flash Chip Size" data-summary="フラッシュチップの総容量を表示します">-</p>
+    <p id="reset_reason" class="value" data-title="Reset Reason" data-summary="最後のリセットの原因を表示します">-</p>
+    <p id="hall_sensor_value" class="value" data-title="Hall Sensor Value" data-summary="ホールセンサーの値を表示します">-</p>
+  </div>
+
+  <button id="connect">Connect to BLE Device</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
