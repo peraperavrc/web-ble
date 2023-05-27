@@ -1,6 +1,6 @@
 document.querySelector('#connect').addEventListener('click', connect);
 
-const updateFrequency = 1000; // 1秒に1回まで更新
+const updateFrequency = 200; // 1秒に1回まで更新
 let lastUpdateTime = 0;
 
 async function animate(element, value) {
